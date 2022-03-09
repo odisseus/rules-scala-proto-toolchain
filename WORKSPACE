@@ -22,7 +22,7 @@ http_archive(
 
 load("@io_bazel_rules_scala//:scala_config.bzl", "scala_config")
 
-scala_config(scala_version = "2.13.7")
+scala_config(scala_version = "2.12.7")
 
 http_archive(
     name = "com_google_protobuf",
@@ -99,22 +99,22 @@ load("@rules_jvm_external//:specs.bzl", "maven")
 
 maven_install(
     artifacts = [
-        "org.scala-lang:scala-library:jar:2.13.7",
-        "org.scala-lang:scala-reflect:jar:2.13.7",
-        "org.scala-lang:scala-compiler:jar:2.13.7",
+        "org.scala-lang:scala-library:jar:2.12.7",
+        "org.scala-lang:scala-reflect:jar:2.12.7",
+        "org.scala-lang:scala-compiler:jar:2.12.7",
 
         # common
-        "org.scala-lang.modules:scala-xml_2.13:1.3.0",
-        "org.scala-lang.modules:scala-parser-combinators_2.13:1.1.2",
+        "org.scala-lang.modules:scala-xml_2.12:1.3.0",
+        "org.scala-lang.modules:scala-parser-combinators_2.12:1.1.2",
 
         # proto
-        "com.thesamet.scalapb:compilerplugin_2.13:0.9.7",
-        "com.thesamet.scalapb:protoc-bridge_2.13:0.7.14",
-        "com.thesamet.scalapb:scalapbc_2.13:0.9.7",
-        "com.thesamet.scalapb:scalapb-runtime_2.13:0.9.7",
-        "com.thesamet.scalapb:scalapb-runtime-grpc_2.13:0.9.7",
-        "com.thesamet.scalapb:lenses_2.13:0.9.7",
-        "com.lihaoyi:fastparse_2.13:2.1.3",
+        "com.thesamet.scalapb:compilerplugin_2.12:0.9.7",
+        "com.thesamet.scalapb:protoc-bridge_2.12:0.7.14",
+        "com.thesamet.scalapb:scalapbc_2.12:0.9.7",
+        "com.thesamet.scalapb:scalapb-runtime_2.12:0.9.7",
+        "com.thesamet.scalapb:scalapb-runtime-grpc_2.12:0.9.7",
+        "com.thesamet.scalapb:lenses_2.12:0.9.7",
+        "com.lihaoyi:fastparse_2.12:2.1.3",
         "io.grpc:grpc-core:1.24.0",
         "io.grpc:grpc-api:1.24.0",
         "io.grpc:grpc-protobuf:1.24.0",
@@ -138,25 +138,25 @@ maven_install(
         "com.lmax:disruptor:3.4.2",
         "io.opencensus:opencensus-impl-core:0.22.1",
         "io.opencensus:opencensus-contrib-grpc-metrics:0.22.1",
-        "org.scalameta:common_2.13:jar:4.3.0",
-        "org.scalameta:fastparse_2.13:jar:1.0.1",
-        "org.scalameta:fastparse-utils_2.13:jar:1.0.1",
-        "org.scala-lang.modules:scala-collection-compat_2.13:jar:2.1.2",
-        "org.scalameta:parsers_2.13:jar:4.3.0",
-        "org.scalameta:scalafmt-core_2.13:jar:2.3.2",
-        "org.scalameta:scalameta_2.13:jar:4.3.0",
-        "org.scalameta:trees_2.13:jar:4.3.0",
-        "org.typelevel:paiges-core_2.13:jar:0.2.4",
+        "org.scalameta:common_2.12:jar:4.3.0",
+        "org.scalameta:fastparse_2.12:jar:1.0.1",
+        "org.scalameta:fastparse-utils_2.12:jar:1.0.1",
+        "org.scala-lang.modules:scala-collection-compat_2.12:jar:2.1.2",
+        "org.scalameta:parsers_2.12:jar:4.3.0",
+        "org.scalameta:scalafmt-core_2.12:jar:2.3.2",
+        "org.scalameta:scalameta_2.12:jar:4.3.0",
+        "org.scalameta:trees_2.12:jar:4.3.0",
+        "org.typelevel:paiges-core_2.12:jar:0.2.4",
         "com.typesafe:config:1.3.3",
         "org.scala-lang:scalap:jar:2.11.12",
-        "com.thesamet.scalapb:lenses_2.13:jar:0.9.0",
-        "com.thesamet.scalapb:scalapb-runtime_2.13:jar:0.9.0",
-        "com.lihaoyi:fansi_2.13:0.2.9",
-        "com.lihaoyi:pprint_2.13:0.6.0",
-        "com.lihaoyi:sourcecode_2.13:jar:0.1.7",
+        "com.thesamet.scalapb:lenses_2.12:jar:0.9.0",
+        "com.thesamet.scalapb:scalapb-runtime_2.12:jar:0.9.0",
+        "com.lihaoyi:fansi_2.12:0.2.9",
+        "com.lihaoyi:pprint_2.12:0.6.0",
+        "com.lihaoyi:sourcecode_2.12:jar:0.1.7",
         "com.google.protobuf:protobuf-java:3.10.0",
-        "com.geirsson:metaconfig-core_2.13:jar:0.9.4",
-        "com.geirsson:metaconfig-typesafe-config_2.13:jar:0.9.4",
+        "com.geirsson:metaconfig-core_2.12:jar:0.9.4",
+        "com.geirsson:metaconfig-typesafe-config_2.12:jar:0.9.4",
     ],
     fetch_sources = True,
     generate_compat_repositories = True,
